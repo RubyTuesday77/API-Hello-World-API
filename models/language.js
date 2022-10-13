@@ -1,8 +1,8 @@
-// require mongoose: 
+// Require mongoose:
 const mongoose = require('mongoose')
 const { Schema } = mongoose 
 
-// schema:
+// Schema:
 const languageSchema = new Schema({
     name: { type: String, required: true },
     greeting: String,
@@ -10,6 +10,6 @@ const languageSchema = new Schema({
     filler: String
 })
 
-// model and export: 
+// Model and export:
 const Language = mongoose.model('Language', languageSchema)
 module.exports = Language
